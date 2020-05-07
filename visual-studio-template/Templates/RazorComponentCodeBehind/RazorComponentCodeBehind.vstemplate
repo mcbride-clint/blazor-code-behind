@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Razor Component with Code Behind</Name>
+    <Description>Razor Component with Code section moved to a separate .cs file.</Description>
+    <Icon Package="{AAB75614-2F8F-4DA6-B0A6-763C6DBB2969}" ID="13"/>
+    <ProjectType>CSharp</ProjectType>
+    <TemplateGroupID>AspNetCore</TemplateGroupID>
+    <TemplateID>Microsoft.AspNetCore.Components.RazorComponent</TemplateID>
+    <AppliesTo>DotNetCoreRazor</AppliesTo>
+    <DefaultName>Component.razor</DefaultName>
+    <NumberOfParentCategoriesToRollUp>3</NumberOfParentCategoriesToRollUp>
+    <SortOrder>72</SortOrder>
+    <ShowByDefault>false</ShowByDefault>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+  </TemplateData>
+    <TemplateContent>
+    <ProjectItem TargetFileName="$fileinputname$.razor.cs"
+                 ReplaceParameters="true">
+      Component.razor.cs
+    </ProjectItem>
+    <ProjectItem TargetFileName="$fileinputname$.razor"
+                 ReplaceParameters="true">
+      Component.razor
+    </ProjectItem>
+  </TemplateContent>
+</VSTemplate>

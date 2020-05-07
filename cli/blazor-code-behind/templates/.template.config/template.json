@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Clint McBride",
+  "classifications": [ "Blazor", "Component" ],
+  "identity": "Blazor.Component.CodeBehind",
+  "name": "Blazor Component with Code Section in Serparate File",
+  "shortName": "blazor-code-behind",
+  "sourceName": "Blazor.Component.CodeBehind",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  }
+}
