@@ -26,6 +26,6 @@ jobs:
         uses: microsoft/setup-msbuild@v1.0.2
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Build extension
-        run: msbuild ".\visual-studio-template\RazorComponentCodeBehind\RazorComponentCodeBehind.sln" /t:Rebuild
+        run: msbuild ".\blazor-code-behind\visual-studio-template\RazorComponentCodeBehind\RazorComponentCodeBehind.sln" /t:Rebuild
         env: 
           DeployExtension: False
