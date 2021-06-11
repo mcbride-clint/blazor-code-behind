@@ -17,7 +17,7 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
-    - name: Restore dependencies
-      run: dotnet restore
+    - name: visual Restore dependencies
+      run: dotnet "visual-studio-template\RazorComponentCodeBehind\RazorComponentCodeBehind.sln" restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet "visual-studio-template\RazorComponentCodeBehind\RazorComponentCodeBehind.sln" build --no-restore
