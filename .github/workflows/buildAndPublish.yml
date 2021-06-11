@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -26,6 +26,6 @@ jobs:
         uses: microsoft/setup-msbuild@v1.0.2
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Build extension
-        run: msbuild "visual-studio-template\RazorComponentCodeBehind\RazorComponentCodeBehind.sln" /t:Rebuild
+        run: msbuild "$GITHUB_WORKSPACE\visual-studio-template\RazorComponentCodeBehind\RazorComponentCodeBehind.sln" /t:Rebuild
         env: 
           DeployExtension: False
