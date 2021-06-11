@@ -18,6 +18,6 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: visual Restore dependencies
-      run: dotnet "visual-studio-template\RazorComponentCodeBehind\RazorComponentCodeBehind.sln" restore
+      run: dotnet restore "visual-studio-template\RazorComponentCodeBehind\RazorComponentCodeBehind.sln"
     - name: Build
-      run: dotnet "visual-studio-template\RazorComponentCodeBehind\RazorComponentCodeBehind.sln" build --no-restore
+      run: dotnet build "visual-studio-template\RazorComponentCodeBehind\RazorComponentCodeBehind.sln" --no-restore 
