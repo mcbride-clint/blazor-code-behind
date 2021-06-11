@@ -19,6 +19,10 @@ namespace $rootnamespace$
             base.OnInitialized();   
             Title = "$safeitemname$";
         }
+        protected override void OnParametersSet()
+        {
+            base.OnParametersSet();
+        }
         protected override void OnAfterRender(bool firstRender)
         {
             base.OnAfterRender(firstRender);

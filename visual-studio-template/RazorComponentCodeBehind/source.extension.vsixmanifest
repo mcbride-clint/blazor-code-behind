@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="RazorComponentCodeBehind.c5e48f45-f4d9-4ec7-8e58-5065a9d8f9e8" Version="1.0" Language="en-US" Publisher="Clint McBride" />
+        <Identity Id="RazorComponentCodeBehind.c5e48f45-f4d9-4ec7-8e58-5065a9d8f9e8" Version="1.1" Language="en-US" Publisher="Clint McBride" />
         <DisplayName>Razor Component Code Behind</DisplayName>
-        <Description xml:space="preserve">Adds Razor Component with Code section moved to a separate .cs file.</Description>
+        <Description xml:space="preserve">Adds two new templates:
+    Razor Component with Code section moved to a separate .cs file.
+    Empty Razor Component with Code section moved to a separate .cs file.
+</Description>
         <Tags>Blazor, C#</Tags>
     </Metadata>
     <Installation>
